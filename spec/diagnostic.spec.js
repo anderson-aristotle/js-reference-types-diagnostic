@@ -20,7 +20,7 @@ const wordFrequencies = (text) => normalizeWords(text)
 
 const uniqueWords = (text) => Object.keys(wordFrequencies(text))
 
-const wordCount = (text, unique) => // jshint ignore: line
+const wordCount = (text, unique) =>
   unique ? uniqueWords(text).length : normalizeWords(text).length
 
 describe('JavaScript references types diagnostic', () => {
@@ -28,7 +28,7 @@ describe('JavaScript references types diagnostic', () => {
     const normalizedWords = normalizeWords(gettysburg)
 
     it('has the correct length', () => {
-      expect(diagnostic.normalizeWords(gettysburg).length).to.equal(278)
+      expect(diagnostic.normalizeWords(gettysburg).length).to.equal(normalizedWords.length)
     })
 
     it('matches expected array', () => {
@@ -41,7 +41,7 @@ describe('JavaScript references types diagnostic', () => {
     const uniquedWords = uniqueWords(gettysburg)
 
     it('has the correct length', () => {
-      expect(diagnostic.uniqueWords(gettysburg).length).to.equal(139)
+      expect(diagnostic.uniqueWords(gettysburg).length).to.equal(uniquedWords.length)
     })
 
     it('matches expected array', () => {
@@ -51,12 +51,15 @@ describe('JavaScript references types diagnostic', () => {
   })
 
   describe('word count', () => {
+    const wordCounted = wordCount(gettysburg)
+    const wordCountedUnique = wordCount(gettysburg, true)
+
     it('has the correct word count', () => {
-      expect(diagnostic.wordCount(gettysburg)).to.equal(278)
+      expect(diagnostic.wordCount(gettysburg)).to.equal(wordCounted)
     })
 
     it('has the correct unique word count', () => {
-      expect(diagnostic.wordCount(gettysburg, true)).to.equal(139)
+      expect(diagnostic.wordCount(gettysburg, true)).to.equal(wordCountedUnique)
     })
   })
 
@@ -64,7 +67,7 @@ describe('JavaScript references types diagnostic', () => {
     const wordFrequencied = wordFrequencies(gettysburg)
 
     it('has the correct length', () => {
-      expect(Object.keys(diagnostic.wordFrequencies(gettysburg)).length).to.equal(139)
+      expect(Object.keys(diagnostic.wordFrequencies(gettysburg)).length).to.equal(wordFrequencied.length)
     })
 
     it('matches dictionary', () => {
