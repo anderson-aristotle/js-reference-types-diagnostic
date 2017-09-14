@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const declaration =
 `When in the Course of human events, it becomes necessary for one people to
@@ -28,6 +28,6 @@ We hold these truths to be self-evident, that all men are created equal, that
  Government. The history of the present King of Great Britain is a history of
  repeated injuries and usurpations, all having in direct object the
  establishment of an absolute Tyranny over these States. To prove this, let
- Facts be submitted to a candid world.`;
+ Facts be submitted to a candid world.`
 
-module.exports = declaration;
+module.exports = declaration

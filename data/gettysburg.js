@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const gettysburgAddress =
 `Four score and seven years ago our fathers brought forth on this continent, a
@@ -20,6 +20,6 @@ But, in a larger sense, we can not dedicate -- we can not consecrate -- we can
  they gave the last full measure of devotion -- that we here highly resolve that
  these dead shall not have died in vain -- that this nation, under God, shall
  have a new birth of freedom -- and that government of the people, by the
- people, for the people, shall not perish from the earth.`;
+ people, for the people, shall not perish from the earth.`
 
-module.exports = gettysburgAddress;
+module.exports = gettysburgAddress

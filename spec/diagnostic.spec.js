@@ -67,7 +67,7 @@ describe('JavaScript references types diagnostic', () => {
     const wordFrequencied = wordFrequencies(gettysburg)
 
     it('has the correct length', () => {
-      expect(Object.keys(diagnostic.wordFrequencies(gettysburg)).length).to.equal(wordFrequencied.length)
+      expect(Object.keys(diagnostic.wordFrequencies(gettysburg)).length).to.equal((Object.keys(wordFrequencied)).length)
     })
 
     it('matches dictionary', () => {
