@@ -7,16 +7,16 @@ This diagnostic assesses your ability to use the most common JavaScript
 
 ## Prerequisites
 
--   [js-reference-types](https://git.generalassemb.ly/ga-wdi-boston/js-reference-types)
+- [js-reference-types](https://git.generalassemb.ly/ga-wdi-boston/js-reference-types)
 
 ## Instructions
 
-1.  Fork and clone this repository.
-1.  Change into the new directory.
-1.  Install dependencies (`npm install`).
-1.  Create and checkout a new branch, named `response`.
-1.  Follow the directions given in [`lib/diagnostic.js`](lib/diagnostic.js).
-1.  Before the allotted time is up, push to your fork and issue a pull request.
+1. Fork and clone this repository.
+1. Change into the new directory.
+1. Install dependencies (`npm install`).
+1. Create and checkout a new branch, named `response`.
+1. Follow the directions given in [`lib/diagnostic.js`](lib/diagnostic.js).
+1. Before the allotted time is up, push to your fork and issue a pull request.
 
 Your pull request description should contain a "fist to five" for comfort and
 clarity. Additionally, you should mention the resources you used to help you
@@ -44,6 +44,6 @@ some of the most common sources of errors. Test your script by running
 
 ## [License](LICENSE)
 
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
+1. All content is licensed under a CC­BY­NC­SA 4.0 license.
+1. All software code is licensed under GNU GPLv3. For commercial use or
     alternative licensing, please contact legal@ga.co.
