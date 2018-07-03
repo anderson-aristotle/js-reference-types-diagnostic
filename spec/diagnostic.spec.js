@@ -78,11 +78,11 @@ describe('Question 4:', () => {
       expect(diagnostic.excite).to.be.a('function')
     })
     it('returns an array', () => {
-      expect(diagnostic.excite(['foo', 'bar']).to.be.an('array'))
+      expect(diagnostic.excite(['foo', 'bar'])).to.be.an('array')
     })
     it('appens an exclamation mark to each string', () => {
-      expect(diagnostic.excite(['foo', 'bar']).to.eql(['foo!', 'bar!']))
-      expect(diagnostic.excite(['a', 'b', 'c', 'd']).to.eql(['a!', 'b!', 'c!', 'd!']))
+      expect(diagnostic.excite(['foo', 'bar'])).to.eql(['foo!', 'bar!'])
+      expect(diagnostic.excite(['a', 'b', 'c', 'd'])).to.eql(['a!', 'b!', 'c!', 'd!'])
     })
   })
 })
@@ -93,12 +93,12 @@ describe('Question 5:', () => {
       expect(diagnostic.negativeNums).to.be.a('function')
     })
     it('returns an array', () => {
-      expect(diagnostic.negativeNums([1, 2]).to.be.an('array'))
+      expect(diagnostic.negativeNums([1, 2])).to.be.an('array')
     })
     it('returns an array containing negative versions of the original numbers', () => {
-      expect(diagnostic.negativeNums([1, 2]).to.eql([-1, -2]))
-      expect(diagnostic.negativeNums([20, 400, 123.27]).to.eql([-20, -400, -123.27]))
-      expect(diagnostic.negativeNums([0, Infinity]).to.eql([-0, -Infinity]))
+      expect(diagnostic.negativeNums([1, 2])).to.eql([-1, -2])
+      expect(diagnostic.negativeNums([20, 400, 123.27])).to.eql([-20, -400, -123.27])
+      expect(diagnostic.negativeNums([0, Infinity])).to.eql([-0, -Infinity])
     })
     it('doesn\'nt modify the original array that is passed in', () => {
       const arr = [1, 2, 3]
